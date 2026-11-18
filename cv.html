@@ -21,6 +21,7 @@
   --width: 1160px;
 }
 
+
 * { box-sizing: border-box; }
 html { scroll-padding-top: 100px; }
 body {
@@ -294,6 +295,31 @@ footer { border-top: 1px solid var(--line); }
   a { color: black; text-decoration: none; }
   .footer-inner { padding-block: 12pt; }
 }
+
+/* Portfolio: visible work, clear entry points, connected research. */
+.site-header { background: var(--paper); }
+main > section { scroll-margin-top: -64px; }
+.hero-subtitle { font-size: clamp(1.75rem, 2.7vw, 2.25rem); }
+.hero-art img { aspect-ratio: 9 / 11; object-fit: contain; }
+.hero-methods { display: flex; flex-wrap: wrap; gap: 8px 15px; margin-top: 22px; color: var(--green); font-size: .875rem; }
+.hero-methods span { border-bottom: 1px solid #b3c5b9; padding-bottom: 3px; }
+.affiliation { color: var(--muted); font-size: .875rem; margin: 22px 0 0; }
+.cover-link { display: block; position: relative; text-decoration: none; overflow: hidden; }
+.cover-link img { transition: transform .25s ease; }
+.cover-link:hover img { transform: scale(1.025); }
+.cover-link:focus-visible { outline-offset: -5px; }
+.cover-cta { position: absolute; right: 18px; bottom: 17px; padding: 7px 13px; background: #fff; color: #173b3a; border: 1px solid #d8e1da; border-radius: 3px; font-size: .875rem; font-weight: 600; box-shadow: 0 2px 10px #173b3a12; }
+.project-body h3 a { color: var(--ink); text-decoration: none; }
+.project-body h3 a:hover { color: var(--burgundy); text-decoration: underline; }
+.film-cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, #102222b8 100%); pointer-events: none; }
+.film-title { position: absolute; left: 30px; bottom: 62px; z-index: 1; color: white; font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.025em; }
+.film-cover .cover-cta { z-index: 2; }
+.original-title { font-size: 1rem; color: var(--muted); }
+.pub-badge { display: inline-block; padding: 3px 8px; border: 1px solid #c8d8cd; background: #edf2ed; color: var(--green); font-size: .875rem; }
+.pub-abstract { max-width: 65em; margin-top: 12px; font-size: .95rem; line-height: 1.75; color: var(--muted); }
+.doi-record { color: var(--muted); font-size: .9rem; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { .cover-link img { transition: none; } }
+
 </style>
   <title>Academic CV | Yiran Cheng</title>
   <style>
@@ -378,6 +404,15 @@ footer { border-top: 1px solid var(--line); }
       </div>
     </section>
 
+    <section id="forthcoming" aria-labelledby="forthcoming-title"><h2 id="forthcoming-title">Accepted &amp; forthcoming</h2><div class="publication-list">
+        <article class="publication forthcoming" data-category="presentation" id="paper-chi-calligraphy">
+          <p class="pub-year">2027</p><div class="pub-body"><p class="pub-badge">Accepted · Forthcoming</p><h3>Continuity Does Not Mean the Absence of Transition: A Dual-Rater Video Study of Action Boundaries in Copying <em>Shi</em> and <em>Zhi</em> from the Cao Quan Stele</h3><p class="authors"><strong>Yiran Cheng</strong> · Sole author</p><p class="venue"><em>ACM CHI Conference on Human Factors in Computing Systems (CHI 2027)</em>. Accepted; presentation forthcoming. Pittsburgh, USA · 10–14 May 2027.</p><p class="pub-abstract">Drawing on 72 dual-view recordings from four experienced calligraphers, independent dual-rater coding and practitioner reflections, this study distinguishes visible actions, phase functions and whole-character rhythm to inform the documentation of embodied craft knowledge.</p><div class="pub-links"><a href="https://caoquanbei-evidence.netlify.app/" target="_blank" rel="noopener noreferrer">Explore the calligraphy project</a><a href="index.html#project-calligraphy">Project context</a></div></div>
+        </article>
+        <article class="publication forthcoming" data-category="presentation" id="paper-chi-shadow">
+          <p class="pub-year">2027</p><div class="pub-body"><p class="pub-badge">Accepted · Forthcoming</p><h3>From Visual Resemblance to Performability: Practitioner Knowledge in the Design of Digital Haining Shadow Puppets</h3><p class="authors"><strong>Yiran Cheng</strong> · First author</p><p class="venue"><em>ACM CHI Conference on Human Factors in Computing Systems (CHI 2027)</em>. Accepted; presentation forthcoming. Pittsburgh, USA · 10–14 May 2027.</p><p class="pub-abstract">Combining practitioner studies (n=10), regional LoRA adaptation and a bimanual rod-control system, this work examines how generated shadow-puppet images become articulated, performable characters. Its feedback framework connects pose conditions, component relationships and preservation conditions.</p><div class="pub-links"><a href="https://yirancheng-create-haining-shadow-theatre.netlify.app/" target="_blank" rel="noopener noreferrer">Explore Haining Shadow Theatre</a><a href="index.html#project-shadow">Project context</a></div></div>
+        </article>
+      </div></section>
+
     <section id="publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Selected published papers</h2>
       <div class="publication-list">
@@ -416,6 +451,9 @@ footer { border-top: 1px solid var(--line); }
             <p class="venue"><em>2022 5th International Conference on Data Science and Information Technology (DSIT)</em>, pp. 1–6. IEEE.</p>
             <div class="pub-links"><a href="https://doi.org/10.1109/DSIT55514.2022.9943892" target="_blank" rel="noopener noreferrer">doi.org/10.1109/DSIT55514.2022.9943892</a></div>
           </div>
+        </article>
+        <article class="publication" data-category="paper" id="paper-urban">
+          <p class="pub-year">2020</p><div class="pub-body"><h3>Urban Impressions Interwoven with New and Old Cultures</h3><p class="original-title" lang="zh-CN">《新旧文化交织的都市印象》</p><p class="authors"><strong>Yiran Cheng</strong> · Sole author</p><p class="venue"><em>Jingchu Academic (荆楚学术)</em>, March 2020. In Chinese.</p><p class="doi-record">DOI: 10.26914/c.cnkihy.2020.002524</p></div>
         </article>
       </div>
     </section>
