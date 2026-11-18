@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected academic CV of Yiran Cheng. Education, publications, research experience and methods across media, culture and technology.">
+  <meta name="theme-color" content="#31594d">
+  <link rel="canonical" href="https://yiran-cheng.github.io/cv.html">
+  <style>:root {
+  color-scheme: light;
+  --paper: #fafaf8;
+  --surface: #ffffff;
+  --ink: #1e2a2b;
+  --muted: #5c6865;
+  --green: #31594d;
+  --green-soft: #eaf0eb;
+  --burgundy: #742e3c;
+  --line: #dce1db;
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --width: 1160px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 100px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+[hidden], .hidden { display: none !important; }
+::selection { background: #dbe7dd; color: var(--ink); }
+a { color: var(--green); text-underline-offset: 0.22em; }
+a:hover { color: var(--burgundy); }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--burgundy);
+  outline-offset: 5px;
+}
+img { display: block; max-width: 100%; height: auto; }
+figure { margin: 0; }
+p { margin: 0 0 1.1rem; }
+h1, h2, h3, h4 { margin-top: 0; }
+h1, h2, .serif { font-family: var(--serif); font-weight: 400; }
+h1, h2 { letter-spacing: -0.045em; }
+h1 { font-size: clamp(3.75rem, 7.5vw, 6.5rem); line-height: 1.04; }
+h2 { margin-bottom: 1.3rem; font-size: clamp(2.2rem, 4vw, 3.25rem); line-height: 1.15; }
+h3 { font-size: 1.3rem; line-height: 1.38; font-weight: 600; letter-spacing: -0.025em; }
+main, .header-inner, .footer-inner {
+  width: min(var(--width), calc(100% - 88px));
+  margin-inline: auto;
+}
+main > section { padding-block: 96px; scroll-margin-top: 88px; }
+main > section + section { border-top: 1px solid var(--line); }
+.skip-link {
+  position: fixed;
+  z-index: 30;
+  top: 10px;
+  left: 16px;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: #fff;
+  transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  background: rgba(250, 250, 248, 0.97);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85px;
+  gap: 30px;
+}
+.brand { color: var(--ink); font-weight: 650; font-size: 1.12rem; text-decoration: none; letter-spacing: -0.03em; white-space: nowrap; }
+#site-nav { display: flex; align-items: center; gap: 28px; }
+#site-nav a { font-size: 0.9rem; color: var(--muted); text-decoration: none; }
+#site-nav a:hover, #site-nav a[aria-current] { color: var(--burgundy); }
+.menu-toggle {
+  display: none;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.14fr 0.86fr;
+  gap: 76px;
+  align-items: center;
+  min-height: 620px;
+  padding-block: 88px 100px;
+}
+.eyebrow, .project-type {
+  margin-bottom: 20px;
+  color: var(--burgundy);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero h1 { margin-bottom: 22px; }
+.hero-subtitle { margin-bottom: 22px; color: var(--green); font-family: var(--serif); font-size: clamp(1.6rem, 2.5vw, 2.05rem); line-height: 1.3; }
+.intro { max-width: 38em; color: var(--muted); font-size: 1.075rem; line-height: 1.8; }
+.hero-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin-top: 30px; }
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 9px 20px;
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  color: var(--green);
+  font-size: 0.95rem;
+  font-weight: 550;
+  text-decoration: none;
+}
+.button.primary { background: var(--green); color: white; }
+.button.primary:hover { background: #244638; border-color: #244638; color: white; }
+.text-link { font-size: 0.95rem; text-decoration-thickness: 1px; }
+.hero-art { align-self: center; }
+.hero-art img { width: 100%; aspect-ratio: 4 / 4.25; object-fit: cover; border-radius: 2px; }
+figcaption { margin-top: 12px; color: var(--muted); font-size: 0.875rem; line-height: 1.55; }
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 38px;
+}
+.section-heading .eyebrow { margin-bottom: 10px; }
+.section-heading h2 { margin-bottom: 0; }
+.section-heading > p { max-width: 32em; margin-bottom: 2px; color: var(--muted); font-size: 1rem; }
+.research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.project-card { display: flex; flex-direction: column; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 3px; }
+.project-image { background: #edf0eb; }
+.project-image img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.project-image figcaption { padding: 0 25px 15px; margin-top: 9px; }
+.project-body { display: flex; flex: 1; flex-direction: column; padding: 29px 30px 31px; }
+.project-type { margin-bottom: 11px; font-size: 0.875rem; letter-spacing: 0.05em; }
+.project-body h3 { margin-bottom: 15px; font-family: var(--serif); font-size: 1.9rem; font-weight: 400; line-height: 1.18; }
+.project-body > p { color: var(--muted); }
+.project-meta { font-size: 0.875rem; line-height: 1.6; }
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; padding-top: 12px; margin-top: auto; }
+.project-links a, .project-links button { font-size: 0.9rem; }
+.project-links button { padding: 0; background: transparent; color: var(--green); border: none; text-decoration: underline; text-underline-offset: 0.22em; }
+.project-links button:hover { color: var(--burgundy); }
+.project-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+.project-wide .project-image { height: 100%; }
+.project-wide .project-image img { height: 100%; min-height: 300px; aspect-ratio: auto; }
+.project-wide .project-body { justify-content: center; padding: 38px 42px; }
+.project-wide .project-links { flex-grow: 0; margin-top: 10px; }
+.publication-controls { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 28px; }
+.publication-controls button {
+  min-height: 40px;
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.publication-controls button[aria-pressed="true"] { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+.publication-controls button:hover { border-color: var(--green); color: var(--green); }
+.publication { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 25px; padding-block: 28px; border-top: 1px solid var(--line); }
+.publication:last-child { padding-bottom: 0; }
+.pub-year { padding-top: 2px; color: var(--green); font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.pub-body h3 { max-width: 53em; margin-bottom: 10px; font-size: 1.11rem; line-height: 1.55; font-weight: 550; }
+.pub-body p { margin-bottom: 5px; }
+.authors { color: var(--ink); font-size: 0.95rem; }
+.venue { color: var(--muted); font-size: 0.9rem; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 12px; }
+.pub-links a { font-size: 0.875rem; }
+.timeline { border-top: 1px solid var(--line); }
+.experience { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 45px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+.experience:last-child { border-bottom: none; padding-bottom: 0; }
+.experience-date { padding-top: 2px; color: var(--muted); font-size: 0.9rem; }
+.experience h3 { margin-bottom: 5px; font-size: 1.1rem; }
+.experience .role { margin-bottom: 10px; color: var(--green); font-size: 0.95rem; }
+.experience p:last-child { max-width: 51em; margin-bottom: 0; color: var(--muted); }
+.background-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; }
+.background-grid h2 { margin-bottom: 25px; font-size: 2rem; }
+.plain-list { padding: 0; margin: 0; list-style: none; }
+.plain-list li { padding-block: 13px; border-top: 1px solid var(--line); }
+.plain-list li:last-child { padding-bottom: 0; }
+.plain-list li > p { margin-bottom: 4px; }
+.plain-list small, .plain-list .meta { display: block; margin-top: 4px; color: var(--muted); font-size: 0.875rem; }
+.plain-list strong { font-weight: 550; }
+.plain-list a { text-decoration-thickness: 1px; }
+#contact { padding-block: 78px 88px; }
+.contact-inner { display: flex; justify-content: space-between; align-items: center; gap: 45px; }
+.contact-inner h2 { margin-bottom: 12px; }
+.contact-inner p { max-width: 39em; margin-bottom: 0; color: var(--muted); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 12px 25px; align-items: center; }
+.contact-links a { font-size: 1rem; }
+footer { border-top: 1px solid var(--line); }
+.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 25px; padding-block: 25px 30px; color: var(--muted); font-size: 0.875rem; }
+.footer-inner p { margin: 0; }
+.footer-inner a { color: var(--muted); }
+#project-dialog { max-width: min(820px, calc(100% - 40px)); max-height: calc(100dvh - 70px); padding: 0; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); overflow: auto; }
+#project-dialog::backdrop { background: rgba(16, 27, 25, 0.58); }
+.dialog-close { position: absolute; right: 18px; top: 17px; z-index: 1; min-width: 44px; min-height: 40px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 3px; background: white; color: var(--ink); font-size: 0.875rem; }
+.dialog-content { padding: 52px; }
+.dialog-content h2 { max-width: 90%; font-size: 2.4rem; }
+.dialog-content p, .dialog-content li { color: var(--muted); }
+.dialog-content ul { padding-left: 22px; }
+.dialog-content li { padding-left: 4px; margin-bottom: 8px; }
+.dialog-content img { width: 100%; margin-block: 25px; border-radius: 2px; }
+.dialog-content a { overflow-wrap: anywhere; }
+
+@media (max-width: 1000px) {
+  main, .header-inner, .footer-inner { width: calc(100% - 64px); }
+  #site-nav { gap: 20px; }
+  .hero { gap: 42px; min-height: 580px; }
+  .project-wide .project-body { padding: 30px; }
+  .background-grid { gap: 40px; }
+  .experience { grid-template-columns: 160px minmax(0, 1fr); gap: 30px; }
+}
+
+@media (max-width: 760px) {
+  html { scroll-padding-top: 86px; }
+  main, .header-inner, .footer-inner { width: calc(100% - 40px); }
+  .header-inner { min-height: 72px; gap: 20px; }
+  .menu-toggle { display: block; }
+  #site-nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; padding: 15px 20px 21px; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 8px 12px rgba(30, 42, 43, 0.035); }
+  .menu-toggle[aria-expanded="true"] + #site-nav { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  #site-nav a { display: block; padding: 10px 0; font-size: 1rem; }
+  main > section { padding-block: 64px; }
+  .hero { grid-template-columns: 1fr; gap: 38px; min-height: auto; padding-block: 58px 64px; }
+  .hero h1 { margin-bottom: 18px; font-size: clamp(3.6rem, 14vw, 5rem); }
+  .hero-subtitle { font-size: 1.7rem; }
+  .intro { font-size: 1rem; }
+  .hero-art img { aspect-ratio: 16 / 11; object-position: center; }
+  .section-heading { display: block; margin-bottom: 28px; }
+  .section-heading > p { margin-top: 17px; }
+  .research-grid { grid-template-columns: 1fr; gap: 24px; }
+  .project-wide { display: flex; grid-column: auto; }
+  .project-wide .project-image img { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
+  .project-body, .project-wide .project-body { padding: 25px; }
+  .project-body h3 { font-size: 1.8rem; }
+  .publication { grid-template-columns: 1fr; gap: 8px; padding-block: 23px; }
+  .pub-year { font-size: 0.875rem; }
+  .pub-body h3 { font-size: 1.05rem; }
+  .experience { grid-template-columns: 1fr; gap: 8px; padding-block: 24px; }
+  .background-grid { grid-template-columns: 1fr; gap: 45px; }
+  .background-grid h2 { font-size: 1.9rem; }
+  #contact { padding-block: 60px; }
+  .contact-inner { display: block; }
+  .contact-links { margin-top: 26px; }
+  .dialog-content { padding: 60px 25px 30px; }
+  .dialog-content h2 { max-width: 100%; font-size: 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+
+@media print {
+  :root { --paper: white; --ink: black; --muted: #333; }
+  body { font-size: 11pt; line-height: 1.5; }
+  main, .footer-inner { width: 100%; }
+  .site-header, .skip-link, .menu-toggle, .publication-controls, .hero-art, .hero-links, .project-image, .project-links, #project-dialog { display: none !important; }
+  main > section { padding-block: 22pt; }
+  .hero { display: block; min-height: 0; padding-top: 0; }
+  h1 { font-size: 34pt !important; }
+  h2 { font-size: 23pt; }
+  .hero-subtitle { font-size: 17pt; }
+  .research-grid, .background-grid { display: block; }
+  .project-card, .project-wide { display: block; padding: 0; margin-bottom: 18pt; border: none; break-inside: avoid; }
+  .project-body, .project-wide .project-body { display: block; padding: 0; }
+  .project-body h3 { font-size: 17pt; }
+  .publication, .experience { break-inside: avoid; }
+  .publication { grid-template-columns: 45pt 1fr; gap: 16pt; padding-block: 14pt; }
+  .experience { grid-template-columns: 105pt 1fr; gap: 16pt; padding-block: 14pt; }
+  .background-grid > div { margin-bottom: 22pt; }
+  .contact-inner { display: block; }
+  .contact-links { margin-top: 14pt; }
+  a { color: black; text-decoration: none; }
+  .footer-inner { padding-block: 12pt; }
+}
+</style>
+  <title>Academic CV | Yiran Cheng</title>
+  <style>
+    .cv-document { max-width: 960px; }
+    .cv-document > section { padding-block: 42px; }
+    .cv-document .cv-heading { padding-block: 64px 42px; }
+    .cv-heading h1 { margin-bottom: 16px; font-size: clamp(3rem, 7vw, 5rem); }
+    .cv-heading .eyebrow { margin-bottom: 12px; }
+    .cv-heading p:last-child { margin-bottom: 0; }
+    .cv-document h2 { margin-bottom: 25px; font-size: 2rem; }
+    .cv-document .experience { grid-template-columns: 155px minmax(0, 1fr); gap: 30px; padding-block: 22px; }
+    .cv-document .publication { grid-template-columns: 55px minmax(0, 1fr); gap: 25px; padding-block: 20px; }
+    .cv-document .pub-body h3 { font-size: 1.02rem; }
+    .cv-document .background-grid { gap: 38px; }
+    .cv-document .background-grid h3 { font-size: 1.05rem; }
+    .cv-document .plain-list li { padding-block: 11px; }
+    .cv-document .credentials span { display: block; color: var(--muted); font-size: 0.9rem; }
+    .cv-document a { overflow-wrap: anywhere; }
+    .cv-return { font-size: 0.95rem; }
+    @media (max-width: 620px) {
+      .cv-document .experience { grid-template-columns: 1fr; gap: 5px; }
+      .cv-document .experience-date { margin-bottom: 0; }
+      .cv-document .publication { grid-template-columns: 1fr; gap: 5px; }
+      .cv-document .pub-year { margin-bottom: 0; }
+      .cv-document .background-grid { grid-template-columns: 1fr; gap: 30px; }
+      .cv-document .cv-heading { padding-top: 42px; }
+    }
+    @media print {
+      @page { size: A4; margin: 17mm; }
+      body { font-size: 10pt; line-height: 1.45; }
+      .cv-document { max-width: none; width: 100%; }
+      .cv-document > section { padding-block: 15pt; }
+      .cv-document .cv-heading { padding-block: 0 15pt; }
+      .cv-heading h1 { font-size: 29pt !important; }
+      .cv-document h2 { margin-bottom: 13pt; font-size: 18pt; break-after: avoid; }
+      .cv-document h3 { break-after: avoid; }
+      .cv-document .experience { grid-template-columns: 95pt minmax(0, 1fr); gap: 16pt; padding-block: 11pt; }
+      .cv-document .publication { grid-template-columns: 30pt minmax(0, 1fr); gap: 14pt; padding-block: 10pt; }
+      .cv-document .pub-body h3 { font-size: 10.5pt; }
+      .cv-document .plain-list li { padding-block: 7pt; }
+      .cv-document .background-grid > div { margin-bottom: 13pt; }
+      .cv-document .credentials li { break-inside: avoid; }
+      .cv-document .pub-links { margin-top: 5pt; }
+      .cv-document .pub-links a, .cv-document .venue, .cv-document .authors,
+      .cv-document .experience-date, .cv-document .role,
+      .cv-document .credentials span { font-size: 9pt; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to CV</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Yiran Cheng</a>
+      <a class="cv-return" href="index.html">Back to portfolio</a>
+    </div>
+  </header>
+
+  <main id="main" class="cv-document">
+    <section class="cv-heading" aria-labelledby="name">
+      <p class="eyebrow">Selected academic CV</p>
+      <h1 id="name">Yiran Cheng</h1>
+      <p><a href="mailto:Y.Cheng37@lse.ac.uk">Y.Cheng37@lse.ac.uk</a></p>
+    </section>
+
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="timeline">
+        <article class="experience">
+          <p class="experience-date">Sep 2026–Jun 2027</p>
+          <div><h3>London School of Economics and Political Science</h3><p class="role">MSc Media and Communications (Data and Society)</p><p>In progress.</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Sep 2024–Jun 2026</p>
+          <div><h3>University of Cambridge</h3><p class="role">MPhil in Film and Screen Studies</p><p>Minor in Digital Humanities.</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Sep 2020–Jun 2024</p>
+          <div><h3>Beijing Normal-Hong Kong Baptist University</h3><p class="role">Bachelor of Communication (Honours) in Media and Communication Studies</p><p>First Class Honours.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Selected published papers</h2>
+      <div class="publication-list">
+        <article class="publication">
+          <p class="pub-year">2026</p>
+          <div class="pub-body">
+            <h3>Developing Spatial Narrative Strategies for Panoramic VR Cultural Heritage Content through Project-Based Learning</h3>
+            <p class="authors">Xuefang Zhang &amp; <strong>Yiran Cheng</strong></p>
+            <p class="venue"><em>Proceedings of the International Conferences on Mobile Learning 2026 and Educational Technologies 2026</em>, pp. 169–176. IADIS Press.</p>
+            <div class="pub-links"><a href="https://eric.ed.gov/?id=ED682327" target="_blank" rel="noopener noreferrer">ERIC ED682327</a><a href="https://files.eric.ed.gov/fulltext/ED682327.pdf" target="_blank" rel="noopener noreferrer">Open-access paper</a></div>
+          </div>
+        </article>
+        <article class="publication">
+          <p class="pub-year">2026</p>
+          <div class="pub-body">
+            <h3>From Tool to Thinking: ComfyUI-Based Pathway for Shadow Puppetry Style Generation and Reflections on Practice</h3>
+            <p class="authors">Xuefang Zhang &amp; <strong>Yiran Cheng</strong></p>
+            <p class="venue"><em>ITM Web of Conferences, 83</em>, 01016. ITEMI 2025.</p>
+            <div class="pub-links"><a href="https://doi.org/10.1051/itmconf/20268301016" target="_blank" rel="noopener noreferrer">doi.org/10.1051/itmconf/20268301016</a></div>
+          </div>
+        </article>
+        <article class="publication">
+          <p class="pub-year">2025</p>
+          <div class="pub-body">
+            <h3>Research on the Digital Preservation of Shadow-Puppet Character Styling Based on a Low-Rank Adaptation Model: A Case Study of Shadow Puppetry in Haining, Zhejiang</h3>
+            <p class="authors">Xuefang Zhang &amp; <strong>Yiran Cheng</strong></p>
+            <p class="venue"><em>2025 8th International Conference on Algorithms, Computing and Artificial Intelligence (ACAI)</em>, pp. 1–6. IEEE.</p>
+            <div class="pub-links"><a href="https://doi.org/10.1109/ACAI68217.2025.11406251" target="_blank" rel="noopener noreferrer">doi.org/10.1109/ACAI68217.2025.11406251</a></div>
+          </div>
+        </article>
+        <article class="publication">
+          <p class="pub-year">2022</p>
+          <div class="pub-body">
+            <h3>Multi-dimensional Characteristics and Governance Strategies of Rumors about the COVID-19 Pandemic</h3>
+            <p class="authors">Xue-fang Zhang &amp; <strong>Yi-ran Cheng</strong></p>
+            <p class="venue"><em>2022 5th International Conference on Data Science and Information Technology (DSIT)</em>, pp. 1–6. IEEE.</p>
+            <div class="pub-links"><a href="https://doi.org/10.1109/DSIT55514.2022.9943892" target="_blank" rel="noopener noreferrer">doi.org/10.1109/DSIT55514.2022.9943892</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Selected research &amp; professional experience</h2>
+      <div class="timeline">
+        <article class="experience">
+          <p class="experience-date">Sep 2026–Jun 2027</p>
+          <div><h3>London School of Economics and Political Science</h3><p class="role">Research Assistant</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Sep 2025–Sep 2026</p>
+          <div><h3>Zhejiang University</h3><p class="role">Research Assistant · College of Computer Science and Technology</p><p>Contributed to knowledge graph modelling, ontology design and metadata standards for <em>A Comprehensive Collection of Ancient Chinese Paintings</em>, and explored links with AI-assisted digital curation.</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Jun–Aug 2025</p>
+          <div><h3>The Fitzwilliam Museum</h3><p class="role">Digitisation Researcher &amp; Photographer</p><p>Worked across object photography, 3D digitisation, archival transcription and metadata. Used Transkribus to train and evaluate handwritten text recognition and explored archival data through interactive mapping.</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Jun–Aug 2024</p>
+          <div><h3>Zhejiang Urban and Rural Planning Design Research Institute</h3><p class="role">Asian Games Project Team · Visual Data Smart City Research Center</p><p>Processed population and tourism data for interactive mapping and crowd-flow estimation, and supported GPS route alignment for digital cultural-tourism activities.</p></div>
+        </article>
+        <article class="experience">
+          <p class="experience-date">Jun–Aug 2023</p>
+          <div><h3>iFLYTEK</h3><p class="role">Education Algorithm Engineer</p><p>Worked with historical student learning records to analyse participation and classroom interaction, translating model outputs into reports and teaching recommendations.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="methods" aria-labelledby="methods-title">
+      <h2 id="methods-title">Methods &amp; practice</h2>
+      <ul class="plain-list">
+        <li>Qualitative interviews, discourse analysis and computational text analysis.</li>
+        <li>Knowledge graph modelling, ontology design and Dublin Core metadata, using Protégé and Neo4j.</li>
+        <li>Handwritten text recognition with Transkribus, spatial analysis with QGIS and network visualisation with Gephi.</li>
+        <li>Python, SQL, SPSS, Stata and Tableau.</li>
+        <li>ComfyUI, Stable Diffusion and LoRA workflows, photography and documentary production.</li>
+      </ul>
+    </section>
+
+    <section id="training" aria-labelledby="training-title">
+      <h2 id="training-title">Selected training &amp; certifications</h2>
+      <ul class="plain-list credentials">
+        <li><a href="https://cs50.harvard.edu/certificates/2abff7b0-9bdb-4357-8876-7d27265ebe62" target="_blank" rel="noopener noreferrer">CS50’s Introduction to Artificial Intelligence with Python</a><span>Harvard University (CS50) · November 2026</span></li>
+        <li><a href="https://www.credly.com/badges/ad302eec-f147-4538-b4bd-bf5d1709e0f0" target="_blank" rel="noopener noreferrer">Computer Vision Lab</a><span>WorldQuant University · November 2026</span></li>
+        <li><a href="https://www.credly.com/badges/56821650-9da7-41ff-9ee9-9744b67ec2f4" target="_blank" rel="noopener noreferrer">Data Science Lab (Data Science Application)</a><span>WorldQuant University · November 2026</span></li>
+        <li><a href="https://www.hackerrank.com/certificates/0b9162927536" target="_blank" rel="noopener noreferrer">SQL (Advanced)</a><span>HackerRank · November 2026</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><div class="footer-inner"><p>Yiran Cheng · Selected academic CV</p><a href="index.html">Back to portfolio</a></div></footer>
+</body>
+</html>
