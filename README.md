@@ -2,11 +2,17 @@
 
 [Visit the portfolio](https://yiran-cheng.github.io/)
 
-Research and creative practice across media, culture and technology. This website brings together interactive projects, publications, selected experience and a public academic CV.
+Digital humanities, cultural and media research, and creative computing. This portfolio extends my academic CV with interactive works, research context and public creative outputs.
 
-## Selected project
+## Explore the projects
 
-[Haining Shadow Theatre](https://yirancheng-create-haining-shadow-theatre.netlify.app/) is an interactive bilingual web theatre exploring digital shadow-puppet performance. [Read about the project](https://yiran-cheng.github.io/haining.html).
+- [Haining Shadow Theatre](https://yirancheng-create-haining-shadow-theatre.netlify.app/) — digital shadow-puppet performance.
+- [From Trace to Gesture](https://caoquanbei-evidence.netlify.app/) — calligraphy, writing pathways and an interactive evidence prototype.
+- [Between the Strings](https://qin-between-strings.netlify.app/) — guqin tablature, gesture, rhythm and listening.
+- [A Train to the Past](https://drive.google.com/file/d/1RdKhKH-TOAvCGaPl5QJ-Vj4qtwUBh_Yt/view) — documentary work on the Yunnan–Vietnam Railway.
+- [Confronting Rumours](https://campus.chinadailyasia.com/en/home/12/winner?id=678) — a data journalism entry featured on the China Daily Campus News Awards website.
+
+[Publications](https://yiran-cheng.github.io/#publications) · [Academic CV](https://yiran-cheng.github.io/cv.html)
 
 ## Contact
 
@@ -14,6 +20,4 @@ Research and creative practice across media, culture and technology. This websit
 
 ## Website files
 
-A lightweight static site hosted on GitHub Pages. Open `index.html` or run a local HTTP server to preview. Each deployed HTML file includes its own styles and assets, so no build step is required.
-
-The images document my own creative work and interfaces. Their presence in this repository does not grant a licence to reproduce underlying artworks or third-party material.
+A lightweight static site hosted on GitHub Pages. Each deployed HTML file includes its own styles and assets, so no build step is required.
